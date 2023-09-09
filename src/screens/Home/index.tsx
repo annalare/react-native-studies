@@ -1,5 +1,8 @@
 import { Text, View, TextInput, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
+
+import { Participant } from "../../components/Participant";
+
 export default function Home() {
   function handleParticipantAdd() {
     console.log("vc clicou no botão de add");
@@ -19,6 +22,10 @@ export default function Home() {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
+      <Participant name="Larissa" />
+      <Participant name="Guilherme" />
+      <Participant name="Belinha" />
+      <Participant name="Lana" />
     </View>
   );
 }
